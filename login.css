@@ -1,0 +1,53 @@
+.table{
+	height:300px;
+	width:330px;
+    border : 1px solid #accbcf;
+   margin:auto;
+   
+    border-radius:8px ;
+    box-shadow:2px 3px 12px grey;
+}
+
+.log{
+	font-family:sans-serif;
+	font-size:34px;
+    text-align:center;
+    padding-bottom:34px;
+    border-bottom: 1px solid #8b8be1;
+    
+}
+.rollno{
+	padding:7px 32px 7px 18px;
+	font-family: monospace;
+	font-size:16px;
+    outline:0;
+    border:none;
+
+	border-bottom:2px solid grey;
+	margin:9px 30px 10px 45px;
+}
+	
+.rollno:focus{
+	border-bottom-color:blue;
+}
+.btn{
+	padding:10px 30px 10px 30px;
+	text-align:center;
+	margin-top:25px;
+	margin-left: 13%;
+	border-radius:10px;
+	outline:0;
+	border:1px solid #ddcbcb;
+	box-shadow:2px 5px 14px grey;
+}
+.btn:hover{
+	background-color:blue;
+	color:white;
+	border-color: blue;
+	cursor:pointer;
+}
+.after-log{
+	display: none;
+}
+
+/* Space out content a bit */

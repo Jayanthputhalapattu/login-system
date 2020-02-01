@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	
+	<title>Login form</title>
+	<meta charset="UTF-8">
+	<link rel="manifest" href="/css/manifest.json">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/login.css">
+
+</head>
+<body>
+  <div class = "table">
+   <p class = "log">Login-SVUCE</p>
+
+   <form class ="field"  action="/users/login" autocomplete="off" method="post" name="mainlog">
+  <span style= "color:red">{{error}}</span> 
+   <input type = "text" id ="rol" placeholder="Enter RollNo" class="rollno" name = "rollno" pattern=[0-9]{8} maxlength="8">
+  
+
+   <input type = "password" id = "passw" placeholder="Enter password" class ="rollno" maxlength="15" name="passw" required>
+   
+   <br>
+   <input type ="submit" value = "Sign-In" class="btn" >
+  
+   </form>
+ 
+  </div>
+
+  
+</body>
+
+<script >
+	
+	history.pushState(null,null ,location.href);
+    window.onpopstate = function(){
+    	history.go(1)
+    }
+   
+
+    
+</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+	<title>SVUCE</title>
+ <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/SVUCE.png/220px-SVUCE.png" type="image/png" sizes="16x16">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Weather PWA">
+<link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SVUCE login">
+  <meta name="theme-color" content="#337ab7" />
+   <link rel="manifest" href="/css/manifest.json">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="/">Home</a></li>
+            <li role="presentation"><a href="/users/login">Login</a></li>
+            
+          </ul>
+        </nav>
+        <h3 class="text-muted">SVUCE</h3>
+      </div>
+
+   <div class="logcont">   
+  {{{body}}}
+     </div>
+
+      <footer class="footer">
+        <p>&copy; SVUCE 2019</p>
+      </footer>
+
+    </div> <!-- /container -->
+</body>
+
+
+  <script type="text/javascript">
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/js/service-worker.js').then(function(registration) {
+      // Registration was successful
+      console.log(registration.scope)
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+  </script>
+<script src="/js/service-worker.js"></script>
+</html>

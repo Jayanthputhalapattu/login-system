@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+  <link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/afterlog.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome</title>
+	<meta charset="UTF-8">
+  
+ 
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<form>
+	   <button type = "submit" action= "/user/login">Logout</button>
+	</form>
+  <div class = "table">
+   
+  	<label>Fullname:</label>
+     {{flname}}<br>
+    
+     <label>rollno:</label>
+     {{rollw}}<br>
+     <label>Fathername:</label>
+     {{fname}}<br>
+     <label>Mobile no :</label>
+    
+
+</body>
+<script>
+	
+    history.pushState(null,null ,location.href);
+    window.onpopstate = function(){
+    	history.go(1)
+    }
+  
+</script>
+</html>
